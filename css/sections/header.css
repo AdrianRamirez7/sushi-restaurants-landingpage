@@ -1,17 +1,15 @@
+/* Leftside header*/
 .header__nav {
-    display: flex;
-    overflow: hidden;
+   display: flex;
+   overflow: hidden;
 }
 
-.header__logo-container {
+.header__logo {
     flex: 1;
-    display: flex;
-
     position: relative;
-    background-color: purple;
     padding: 20px;
+    display:  flex;
 }
-
 .header__logo-overlay {
     position: absolute;
     inset: 0;
@@ -19,49 +17,43 @@
     background-color: var(--primary-color);
     z-index: -1;
 }
-
-.header__logo-container > h4 {
-    padding-left: 30px;
-    color: white;
-
-    font-weight: 700;
-    font-size: 24px;
-    text-transform: uppercase;
-    opacity: 0.8;
+.header__logo h4 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-family: var(--playfair-display);
+  font-size: 1.5rem;
+  padding-left: 40px;
 }
-
-.header__menu li {
-    font-weight: 500;
-    font-family: var(--plus-jakarta-sans);
-    color: var(--secondary-color);
-    font-size: 16px;
-    text-transform: uppercase;
-    line-height: 20px;
-    cursor: pointer;
-}
-
-.header__menu li img {
-    width: 24px;
-    object-fit: contain;
-}
-
-.header__menu, .header__menu-mobile {
-    padding: 20px;
-    flex: 1.236;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 64px;
-    list-style: none;
-}
-
-
-/* Mobile menu hamburger code */
-
-.header__menu-mobile {
-    display: none;
-    gap: 20px;
-    position: relative;
-}
-
-/* End of Mobile menu hamburger code */
+/* End of Leftside header*/
+/* Rightside header*/
+    .header__menu, .header__menu-mobile {
+        display: flex;
+        flex: 1.236;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px;
+        z-index: 2;
+        /* background-color: blue; */
+        gap: 64px;
+    }
+    .header__menu li {
+        list-style-type: none;
+        /* margin-right: 30px; */
+        color: var(--primary-color);
+        font-family: var(--playfair-display);
+         font-size: 16px;
+        text-transform: uppercase;
+        line-height: 20px;
+        cursor: pointer;
+    }
+    .header__menu-mobile li {
+        list-style-type: none;
+    }
+    .header__menu li:last-child {
+       
+    }
+    .header__menu-mobile {
+        display: none;
+    }
+/* Ending of rightside header*/
